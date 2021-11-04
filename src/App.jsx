@@ -1,3 +1,4 @@
-export function App(){
-    <h1>Hello World</h1>
+export function App() {
+    return <h1>Hello World</h1>
 }
+
