@@ -1,11 +1,21 @@
-import { Increment } from "./Increment";
 import { RepositoryItem } from "./RepositoryItem";
+import '../styles/repositories.scss';
 
 const item = [
     {
         name: "Kaique",
         description: 'asdasdasdadasdsad',
-        link: 'http://google.com.br'
+        link: '#'
+    },
+    {
+        name: "Kaique",
+        description: 'asdasdasdadasdsad',
+        link: '#'
+    },
+    {
+        name: "Kaique",
+        description: 'asdasdasdadasdsad',
+        link: '#'
     },
 ]
 export function RepositoryList() {
@@ -15,7 +25,6 @@ export function RepositoryList() {
             <ul>
                 {item.map(i => <RepositoryItem repository={i} />)}
             </ul>
-            <Increment />
         </section>
     )
 }
